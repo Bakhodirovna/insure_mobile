@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insure</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- header style -->
+    <header class="header">
+        <div class="container">
+            <div class="header__box">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="./images/INSURE.svg" alt="logo__header"></a>
+                </div>
+                    <ul class="header__navbar">
+                        <li><a class="header__navbar__item" href="./index.html">HOW WE WORK</a></li>
+                        <li><a class="header__navbar__item" href="#">BLOG</a></li>
+                        <li> <a class="header__navbar__item" href="#">ACCOUNT</a></li>
+                        <li><a class="header__navbar__button" href="#">VIEW PLANS</a></li>
+                    </ul>
+                    <div class="header__toggle ">
+                        <span></span>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile">
+            <ul class="mobile__navbar">
+                <li><a class="mobile__navbar__item" href="./index.html">HOW WE WORK</a></li>
+                <li><a class="mobile__navbar__item" href="#">BLOG</a></li>
+                <li> <a class="mobile__navbar__item" href="#">ACCOUNT</a></li>
+                <li><a class="mobile__navbar__button" href="#">VIEW PLANS</a></li>
+            </ul>
+    </div> 
+ <div class="main">
+    <section class="hero">
+        <div class="container">
+            <div class="hero__box">
+                <div class="hero__info">
+                    <span class="hero__line"></span>
+                    <h2 class="hero__title">
+                        Humanizing your insurance.
+                    </h2>
+                    <p class="hero__text">
+                    Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.
+                    </p>
+                    <button class="hero__btn" type="submit">VIEW PLANS</button>
+                </div>
+            </div> 
+        </div>       
+    </section>
+        <section class="different container">
+            <span class="different__line"></span>
+            <h2 class="different__title">We’re different</h2>
+            <ul class="different__list">
+            <li class="different__item1">
+                <h3>Snappy Process</h3>
+                <p>Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
+            </li>
+            <li class="different__item2">
+                <h3>Affordable Prices</h3>
+                <p>We don’t want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
+            </li>
+            <li class="different__item3">
+                <h3>People First</h3>
+                <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.</p>
+            </li>
+            </ul>
+        </section>
+        <section class="work container">
+            <div class="work__box">
+                <h2 class="work__title">Find out more about how we work</h2>
+                <button class="work__btn hero__btn">HOW WE WORK</button>
+            </div>
+        </section>      
+ </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                    <div class="footer__logo">
+                        <div><a href="./index.html"><img src="./images/footer-logo.png" alt="footer_-logo"></a></div>
+                        <ul class="footer__icon">
+                            <li><a href="https://www.facebook.com/"><img src="./images/facebuk.svg" alt=""></a></li>
+                            <li><a href="https://twitter.com/"><img src="./images/twittor.svg" alt="twittor"></a></li>
+                            <li><a href="https://www.pinterest.com/"><img src="./images/pinterest.svg" alt="pinterest"></a></li>
+                            <li><a href="https://www.instagram.com/"><img src="./images/insta.svg" alt="instagram"></a></li>
+                        </ul>
+                    </div>
+                    <span></span>
+                    <div class="footer__navbar">
+                         <div class="footer__navbar__box">
+                            <strong>
+                                OUR COMPANY
+                            </strong>
+                            <ul>
+                                <li><a href="#">HOW WE WORK</a></li>
+                                <li><a href="#">WHY INSURE?</a></li>
+                                <li><a href="#">VIEW PLANS</a></li>
+                                <li><a href="#">REVIEWS</a></li>
+                            </ul>
+                        </div>
+                         <div class="footer__navbar__box">
+                            <strong>HELP ME</strong>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">TERMS OF USE</a></li>
+                                <li><a href="#">PRIVACY POLICY</a></li>
+                                <li><a href="#">COOKIES</a></li>
+                            </ul>
+                        </div>
+                         <div class="footer__navbar__box">
+                            <strong>CONTACT</strong>
+                            <ul>
+                                <li><a href="#">SALES</a></li>
+                                <li><a href="#">SUPPORT</a></li>
+                                <li><a href="#">LIVE CHAT</a></li>
+                            </ul>  
+                        </div>
+                         <div class="footer__navbar__box">
+                            <strong>OTHERS</strong>
+                            <ul>
+                                <li><a href="#">CAREERS</a></li>
+                                <li><a href="#">PRESS</a></li>
+                                <li><a href="#">LICENSES</a></li>
+                            </ul>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    var toggle = document.querySelector(".header__toggle");
+    var main = document.querySelector(".main");
+    var footer = document.querySelector(".footer");
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('header__toggle--active')
+        document.querySelector(".mobile").classList.toggle("mobile--open")
+        main.classList.toggle("dnone")
+        footer.classList.toggle("dnone")
+    })
+</script>
+</html>
