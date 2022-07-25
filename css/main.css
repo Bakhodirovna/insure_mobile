@@ -899,6 +899,9 @@ img {
 .footer__icon > li + li {
   margin-left: 24px;
 }
+.footer__icon > li > a > svg:hover > path {
+  fill: #2C2830;
+}
 .footer__navbar {
   z-index: 99;
   margin-top: 48px;
@@ -971,6 +974,9 @@ img {
   }
   .footer__icon > li + li {
     margin-left: 24px;
+  }
+  .footer__icon > li + li > li > a > svg:hover > path {
+    fill: #2C2830;
   }
   .footer__navbar {
     margin-top: 48px;
